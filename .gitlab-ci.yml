@@ -13,6 +13,14 @@ release_job:
     - if: $CI_COMMIT_TAG             # Run this job when a tag is created
   script:
     - echo "running release_job"
+    - zip -r jhon-vault.zip  .       # Create a zip file of the source code
   release:
     tag_name: '$CI_COMMIT_TAG'
     description: '$CI_COMMIT_TAG'
+    assets:
+      links:
+        - name: "Source Code"
+          url: "https://gitlab.com/$CI_PROJECT_PATH/-/jobs/$CI_JOB_ID/artifacts/download"  # URL to download the artifacts
+    artifacts:
+      paths:
+        - jhon-vault.zip             # Specify the zip file as an artifact
