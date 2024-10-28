@@ -1,10 +1,15 @@
-stages:
-  - build
-
-zip_project:
-  stage: build
+release_job:
+  stage: release
+  image: registry.gitlab.com/gitlab-org/release-cli:latest
+  rules:
+    - if: $CI_COMMIT_TAG                 # Ejecuta este trabajo cuando se crea una etiqueta
   script:
-    - zip -r jhon-vault.zip ./*
+    - echo "running release_job"
+    - zip -r jhon-vault.zip ./*             # Crea el archivo ZIP con todo el contenido del proyecto
   artifacts:
     paths:
-      - jhon-vault.zip
+      - jhon-vault.zip                      # Guarda el archivo ZIP como artefacto descargable
+    expire_in: 1 week                    # Define que expire en una semana
+  release:
+    tag_name: '$CI_COMMIT_TAG'
+    description: 'Release for tag $CI_COMMIT_TAG'
