@@ -1,0 +1,10 @@
+stages:
+  - build
+
+zip_project:
+  stage: build
+  script:
+    - zip -r jhon-vault.zip ./*
+  artifacts:
+    paths:
+      - jhon-vault.zip
