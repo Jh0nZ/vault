@@ -1,5 +1,6 @@
 {
   "alwaysUpdateLinks": true,
   "trashOption": "system",
-  "newFileLocation": "current"
+  "newFileLocation": "current",
+  "defaultViewMode": "preview"
 }
