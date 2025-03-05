@@ -1,3 +1,4 @@
+# Agentes Inteligentes
 ![[image 3.png]]
 
 Cualquier cosa capaz de percibir su medio ambiente con la ayuda de sensores y actuar en ese medio utilizando actuadores

@@ -13,4 +13,4 @@ Características que debe considerar el agente:
 ![[image 2.png|image 2.png]]
 <font color="#f79646">holaa</font>
 [[Drawing 2024-10-25 22.54.38.excalidraw]]
-[[Unidad 3- Resolucion mediante busquedas]]
+[[Unidad 3]]
