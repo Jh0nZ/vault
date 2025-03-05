@@ -2,5 +2,6 @@
   "alwaysUpdateLinks": true,
   "trashOption": "system",
   "newFileLocation": "current",
-  "defaultViewMode": "preview"
+  "defaultViewMode": "preview",
+  "promptDelete": false
 }

@@ -1,3 +1,4 @@
+# Resolución mediante búsquedas
 # Resolución de un problema
 
 ![[image 4.png|image 4.png]]
